@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-with, initial-scale=1.0">
     <title>Một cái web lmao</title>
     <link rel="stylesheet" href="./s.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
     <div id="main">
         <div id="header">
               <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="containerlk1" onclick="closeNav()"  >
+                  <div class="bar11"></div>
+                  <div class="bar21"></div>
+                  <div class="bar31"></div>
+                </div>
                 <a href="#content_hoby" onclick="closeNav()">About</a>
                 <a href="#" onclick="closeNav()">Services</a>
                 <a href="#" onclick="closeNav()">Clients</a>
@@ -19,9 +24,30 @@
               </div>
               
               <!-- Use any element to open the sidenav -->
-              <span onclick="openNav()" id ="sop">|||</span>
-            
-              <div id="nav"><p style="color: white;">Rất vui được gặp bạn (chắc thế) :))</p></div>
+              <div class="containerlk" onclick="openNav()"  >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              
+              <div id="div1" class="fa"></div>
+
+              <script>
+              function ratestar() {
+                var a;
+                a = document.getElementById("div1");
+                a.innerHTML = "&#xf006;";
+                setTimeout(function () {
+                    a.innerHTML = "&#xf123;";
+                  }, 1000);
+                setTimeout(function () {
+                    a.innerHTML = "&#xf005;";
+                  }, 2000);
+              }
+              ratestar();
+              setInterval(ratestar, 3000);
+              </script>
+              <div id="hh"><p id="hh1">Web của Mạnh</p></div>
         </div>
         <div id="content">
           <div id="content_intro">
@@ -55,11 +81,7 @@
               <div class="numbertext">6 / 6</div>
                 <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
             </div>
-          
             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          
             <!-- Image text -->
             <div class="caption-container">
               <p id="caption"></p>
@@ -94,7 +116,7 @@
             </div>
           </div>
           <div id="content_hoby">
-            <div id="hoby_p"><h3>i am a wibu</h3><br>
+            <div id="hoby_p"><h3 style=" margin-left:-35%; font-size:inherit;">i am a wibu</h3><br>
             dsdjfsjdfjkdshfkjahjfhkdhkjhdjfkashdfjhdhfkdsjhkdhkfjskd<br>
           sdhfksahdkfkdsjhfkjshdfjahdfkjhasjkdfhjsd</div>
           </div>
@@ -109,8 +131,16 @@
        function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
         }
+        </script>
+        <script>
+              function myFunction(x) {
+                x.classList.toggle("change");
+                
+              }
+              </script>
 
-/* Set the width of the side navigation to 0 */
+
+        <script>
         function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         }
