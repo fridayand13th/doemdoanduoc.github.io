@@ -1,178 +1,92 @@
 <!DOCTYPE html>
-<html lang="vn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-with, initial-scale=1.0">
-    <title>Một cái web lmao</title>
-    <link rel="stylesheet" href="./s.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stupid web</title>
+    <link rel="stylesheet" href="c.css">
 </head>
 <body>
-    
     <div id="main">
-        <div id="header">
-              <div id="mySidenav" class="sidenav">
-                <div class="containerlk1" onclick="closeNav()"  >
-                  <div class="bar11"></div>
-                  <div class="bar21"></div>
-                  <div class="bar31"></div>
-                </div>
-                <a href="#content_hoby" onclick="closeNav()">About</a>
-                <a href="#" onclick="closeNav()">Services</a>
-                <a href="#" onclick="closeNav()">Clients</a>
-                <a href="#" onclick="closeNav()">Contact</a>
-              </div>
-              
-              <!-- Use any element to open the sidenav -->
-              <div class="containerlk" onclick="openNav()"  >
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-              
-              <div id="div1" class="fa"></div>
-
-              <script>
-              function ratestar() {
-                var a;
-                a = document.getElementById("div1");
-                a.innerHTML = "&#xf006;";
-                setTimeout(function () {
-                    a.innerHTML = "&#xf123;";
-                  }, 1000);
-                setTimeout(function () {
-                    a.innerHTML = "&#xf005;";
-                  }, 2000);
-              }
-              ratestar();
-              setInterval(ratestar, 3000);
-              </script>
-              <div id="hh"><p id="hh1">Web của Mạnh</p></div>
-        </div>
         <div id="content">
-          <div id="content_intro">
-            <div id="content_slide_dad">
-            <div class="mySlides">
-              <div class="numbertext">1 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
+            <video src="./anhotvovan/backgroundso1.mp4"  autoplay="autoplay" loop="loop" class="video1"> </video>
+            <div class="fist_talk te">
+                <h1>XIN CHÀO GIAO</h1>
             </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">2 / 6</div>
-                <img src="./imge/100192216_p0_master1200.jpg" style="width:100%">
+            <div class="button te" onclick="opendh4()">
+                <span>Bấm vào đây!!</span>
             </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">3 / 6</div>
-                <img src="./imge/100213136_p0_master1200.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">4 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">5 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
-            </div>
-          
-            <div class="mySlides">
-              <div class="numbertext">6 / 6</div>
-                <img src="./imge/102799524_p2_master1200.jpg" style="width:100%">
-            </div>
-            <!-- Next and previous buttons -->
-            <!-- Image text -->
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-          
-            <!-- Thumbnail images -->
-            <div class="row">
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%;height:147.33px ;" onclick="currentSlide(1)" alt="The Woods">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/100192216_p0_master1200.jpg" style="width:100%; height:147.33px ;" onclick="currentSlide(2)" alt="Cinque Terre">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/100213136_p0_master1200.jpg" style="width:100%; height:147.33px ;" onclick="currentSlide(3)" alt="Mountains and fjords">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%; height:147.33px ;" onclick="currentSlide(4)" alt="Northern Lights">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%;height:147.33px ;" onclick="currentSlide(5)" alt="Nature and sunrise">
-              </div>
-              <div class="column">
-                <img class="demo cursor" src="./imge/102799524_p2_master1200.jpg" style="width:100%;height:147.33px ;" onclick="currentSlide(6)" alt="Snowy Mountains">
-              </div>
-            </div>
-              <div id="content_slide">
-              <h1 id="text1">Ồ! chào bạn.</h1>
-                  <P>Có thể bạn không biết tôi nhưng tôi cũng không biết bạn.</P>
-              </div>  
-              </div>
-            </div>
-          </div>
-          <div id="content_hoby">
-            <div id="hoby_p"><h3 style=" margin-left:-35%; font-size:inherit;">i am a wibu</h3><br>
-            dsdjfsjdfjkdshfkjahjfhkdhkjhdjfkashdfjhdhfkdsjhkdhkfjskd<br>
-          sdhfksahdkfkdsjhfkjshdfjahdfkjhasjkdfhjsd</div>
-          </div>
-          <div id="content_job">
-
-          </div>
-
-        </div>
-    </div>
-        </body>
-        <script>
-       function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-        </script>
-        <script>
-              function myFunction(x) {
-                x.classList.toggle("change");
+            <div id="lualan1">
                 
-              }
-              </script>
+                <div class="button te bb" onclick="opendh2()">
+                    <span>Bấm tiếp vào đây</span>
+            </div>
+            <div id="lualan2">
+                <div class="button te bb" onclick="opendh3()">
+                    <span>Bấm lần nữa</span>
+            </div>
+            <div id="lualan3">
+                <div class="button te bb" onclick="opendh1()">
+                    <span>Hứa nốt lần này!</span>
+            </div>
+            
+            <div id="maincontent">
+                <div class="testlan1">
+                    
+                </div>
+                <div id="cm1">
+                    <div class="close_button" onclick="closedh1()">
+                        <span>X</span>
+                    </div>
+                    <div id="hoa2">
+                        <img src="./anhotvovan/hoa2.gif" alt="">
+                    </div>
+                <span id="cm11">
+                    <h1>CHÚC MỪNG SINH NHẬT</h1><br>
+                    Em Giao tuổi mới vui vẻ, mạnh khỏe. Sớm có người yêu, mà lúc có người yêu thì đừng bỏ em Mạnh như em Thắng.<br>
+                    <h1>Love You</h1>
+                </span>
+                <div id="hoa1">
+                    <img src="./anhotvovan/phao1.gif" alt="">
+                </div>
+                </div>
+                
+            </div>
+        </div>
 
-
-        <script>
-        function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
-        <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("demo");
-            let captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-            captionText.innerHTML = dots[slideIndex-1].alt;
-          }
-          </script>
-    </html>
+    </div>
+    
+</body>
+<script>
+    function opendh1() {
+       document.getElementById("maincontent").style.display = "flex";
+       
+     }
+    </script>
+     <script>
+     function opendh4() {
+       document.getElementById("lualan1").style.display = "flex";
+     }
+    </script>
+     <script>
+     function opendh3() {
+       document.getElementById("lualan3").style.display = "flex";
+       
+     }
+    </script>
+     <script>
+     function opendh2() {
+       document.getElementById("lualan2").style.display = "flex";
+       
+     }
+    </script>
+     <script>
+    function closedh1(){
+        document.getElementById("maincontent").style.display = "none";
+        document.getElementById("lualan1").style.display = "none";
+        document.getElementById("lualan2").style.display = "none";
+        document.getElementById("lualan3").style.display = "none";
+    } 
+     </script>
+</html>
