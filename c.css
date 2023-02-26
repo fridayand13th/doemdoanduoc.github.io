@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #fcfbfb;
+    background-size: cover;
+    /**/
+    
+}
+.te{
+    color: #fff ;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   overflow: hidden;
+   
+}
+.button{
+    position: relative;
+    margin-top: 10%;
+    background-color: powderblue;
+    height: 40px;
+    width: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    
+}
+.button:hover{
+    
+    cursor: pointer;
+}
+.fist_talk{
+    font-size: 4vw;
+    font-weight: 600;
+    /*-webkit-text-stroke: 1px #0e0c0c;*/
+    color: transparent;
+    background-image: linear-gradient(111deg, rgb(239,228,76), rgb(244, 235, 77));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -800px 0;
+    animation: backcolor 9s linear infinite alternate;
+
+    
+}
+@media screen and (min-width: 1000px) {
+    #main{ background-image: url(./anhotvovan/ngan-pham-lil-ants-anim-test-v06.gif);
+    background-size: cover;
+    
+}
+    .fist_talk{
+        background-image: linear-gradient(111deg, rgb(56, 72, 175),rgb(213, 249, 114));
+        background-position: -80vw 0;
+    }
+  }
+@keyframes backcolor{
+    100%{
+        background-position: 0 0;
+    }
+    
+}
+
+#maincontent{
+    width: 100%;
+    height: 100%;
+    display: none;
+   background-image: url(./anhotvovan/bia1.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 1s;
+    position: fixed;
+    
+
+}
+.close_button{
+    font-size: 30px;
+    font-weight: 700;
+    color: aqua;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+#cm1{
+
+   position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    right: 10px;
+}
+.video1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    min-width: 80%;
+    min-height: 80%;
+    
+}
+.bb{
+    font-size: large;
+    font-weight: 600;
+    width: 300px;
+    height: 100px;
+}
+#lualan3{
+    background-color: #fdfafa;
+    background-image: url(./anhotvovan/giao\ 2.jpg);
+    background-repeat: repeat;
+    background-size: 25%;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 1s;
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+#lualan2{
+    background-color: #fdfafa;
+    background-image: url(./anhotvovan/meo2.gif);
+    background-repeat: repeat;
+    background-size: 25%;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 1s;
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+#lualan1{
+    background-color: #fdfafa;
+    background-image: url(./anhotvovan/vit1.gif);
+    background-repeat: repeat;
+    background-size: 25%;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: 1s;
+    display: none;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+.testlan1{
+    
+    border-top-right-radius: 475px;
+    border-bottom-right-radius: 475px;
+    border: 2px solid #0a0a0a;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background-image: url(./anhotvovan/giao3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: lackcolor 5s forwards ;
+    
+    
+}
+#hoa1{
+    display: flex;
+    position: absolute;
+    height:20%;
+    width: 20%;
+    left:22%;
+    top: 0;
+}
+#hoa2{
+    display: flex;
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    right: 0;
+    bottom: 0;
+}
+@keyframes lackcolor{
+    100%{
+       width: 30%;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    @keyframes lackcolor{   
+        100%{
+           width: 100%;
+        }
+        
+    }
+    .testlan1{
+        opacity: 0.5;
+    }
+    #cm11{
+        color:black;
+        margin-top: 50%;
+        font-weight: 600;
+    }
+    #cm1{
+        justify-content: center;
+        right: 0;
+    }
+    
+}
+
