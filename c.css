@@ -52,7 +52,7 @@ body{
     color: transparent;
     background-image: linear-gradient(111deg, rgb(239,228,76), rgb(244, 235, 77));
     background-repeat: no-repeat;
-    /*-webkit-background-clip: text;*/
+    -webkit-background-clip: text;
     background-position: -30% 0;
     animation: backcolor 9s linear infinite alternate;
     user-select: none;
